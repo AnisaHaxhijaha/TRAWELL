@@ -1,0 +1,147 @@
+body{
+    font-family: "Montserrat Alternates", sans-serif;
+    background-color:beige;
+    }
+    
+    header {
+        height: 50px;
+        width: 100%;
+        padding: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header h2{
+        font-family: "Tac One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        
+          
+    }
+    
+
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 80px;
+        margin-right: 15px;
+    }
+    
+    .logo h2 {
+        margin: 0;
+        color:#080808;
+        font-size: 45px; 
+    }
+
+    nav {
+     top: 0;
+        left: 0;
+        padding: 20px 8%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+      
+    }
+    
+    nav a {
+        margin-left: 20px;
+        font-weight: 600;
+        padding: 6px 15px;
+        border-radius: 20px;
+        text-decoration: none;
+        color:#0a0808;
+        margin-right: 20px;
+        font-size: 17px;
+        transition: color 0.3s ease;
+
+    }
+    
+    
+    
+    nav a:last-child {
+        margin-right: 0;
+    }
+     nav a:hover{
+        color:#f49a08;
+     }
+
+.content{
+    width: 100%;
+    position: absolute;
+    color:black;
+    top: 45%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.content h1 {
+    color: #080808;
+    margin-top: 80px;
+    font-size: 60px;
+    font-weight: 800;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #636060;
+    color: transparent;
+}
+.content p{
+    color: #080808;
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.content p:hover{
+    -webkit-text-stroke: 2px #636060;
+    color: transparent;
+}
+
+button{
+    width: 200px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: black;
+    border: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+button:hover{
+    background: #f49a08;
+    transition: 0.5s;
+}
+
+
+.video-section {
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    z-index:-1;
+}
+.video-container {
+    position: relative;
+    overflow: hidden;
+}
+
+
+@media(max-aspect-ratio: 16/9) {
+    .video-backgground{
+        width: auto;
+        height: 100%;
+    }
+}
+
