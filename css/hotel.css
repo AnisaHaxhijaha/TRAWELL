@@ -1,227 +1,237 @@
-body{
-    font-family: "Montserrat Alternates", sans-serif;
-    background-color:beige;
-    }
-    
-    header {
-        height: 50px;
-        width: 100%;
-        padding: 3px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    header h2{
-        font-family: "Tac One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        
-          
-    }
-    
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: beige;
+}
 
+header {
+  height: 50px;
+  width: 100%;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    .logo {
-        display: flex;
-        align-items: center;
-    }
-    
-    .logo img {
-        width: 80px;
-        margin-right: 15px;
-    }
-    
-    .logo h2 {
-        margin: 0;
-        color:#080808;
-        font-size: 45px; 
-    }
+header h2 {
+  font-family: "Tac One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-    nav {
-     top: 0;
-        left: 0;
-        padding: 20px 8%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-      
-    }
-    
-    nav a {
-        margin-left: 20px;
-        font-weight: 600;
-        padding: 6px 15px;
-        border-radius: 20px;
-        text-decoration: none;
-        color:#0a0808;
-        margin-right: 20px;
-        font-size: 17px;
-        transition: color 0.3s ease;
+.logo {
+  display: flex;
+  align-items: center;
+}
 
-    }
-    
-    
-    
-    nav a:last-child {
-        margin-right: 0;
-    }
-     nav a:hover{
-        color:#f49a08;
-     }
-     .hotels {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      
-      .hotels h1 {
-        text-align: center;
-        color: black;
-        animation: slideInFromLeft 1s ease-in;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bolder;
-      }
-      
-      .slider {
-        position: relative;
-        overflow: hidden;
-      }
-      
-      .slides {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-      }
-      
-      .slide {
-        min-width: 100%;
-        box-sizing: border-box;
-        padding: 20px;
-        display: none;
-      }
-      
-      .slide h2 {
-        color: #007BFF;
-        border-bottom: 2px solid #007BFF;
-        padding-bottom: 5px;
-        animation: slideInFromRight 1s ease-in;
-      }
-      
-      .category h3 {
-        color: #555;
-        margin-bottom: 10px;
-      }
-      
-      .category ul {
-        list-style-type: none;
-        padding-left: 0;
-      }
-      
-      .category li {
-        background-color: #f9f9f9;
-        margin-bottom: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ddd;
-        display: flex;
-        align-items: center;
-        animation: fadeIn 1s ease-in;
-      }
-      
-      .category li img {
-        margin-right: 15px;
-        width: 100px;
-        height: 100px;
-        border-radius: 5px;
-      }
-      
-      .category li strong {
-        color: #333;
-      }
-      
-      .slider-controls {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
-      }
-      
-      .slider-controls button {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-      }
-      
-      .slider-controls button:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-      }
-      
-      /* Animations */
-      @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
-      
-      @keyframes slideInFromLeft {
-        from { transform: translateX(-100%); }
-        to { transform: translateX(0); }
-      }
-      
-      @keyframes slideInFromRight {
-        from { transform: translateX(100%); }
-        to { transform: translateX(0); }
-      }
-    .more-btn {
-     position: absolute;
-    top: 97%;
-    right: 20px; 
-    transform: translateY(-50%);
-    background-color: #E0771D;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+.logo img {
+  width: 80px;
+  margin-right: 15px;
+}
 
-        
-    }
-    
-    .more-btn:hover {
-        background-color: #f49a08;
-    }
+.logo h2 {
+  margin: 0;
+  color: #080808;
+  font-size: 45px;
+}
 
-    .contact-us {
-    background-color: #f9f9f9;
-    padding: 5px 10px; 
-    border-radius: 5px;
-    margin-top: 20px; 
-    text-align: center;
-    max-width: 400px; 
-    margin: 20px auto; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+nav {
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+nav a {
+  margin-left: 20px;
+  font-weight: 600;
+  padding: 6px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #0a0808;
+  margin-right: 20px;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+nav a:hover {
+  color: #f49a08;
+}
+
+.hotels {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotels h1 {
+  text-align: center;
+  color: black;
+  animation: slideInFromLeft 1s ease-in;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: none;
+}
+
+.slide h2 {
+  color: #007BFF;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.category h3 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.category ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.category li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.category li img {
+  margin-right: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.category li strong {
+  color: #333;
+}
+
+.category .price {
+  font-size: 14px;
+  color: #555;
+  margin-top: 50px;
+
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slider-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+.more-btn {
+  position: absolute;
+  top: 97%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: #E0771D;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.more-btn:hover {
+  background-color: #f49a08;
+}
+
+.contact-us {
+  background-color: #f9f9f9;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact-us h2 {
-    color: #007BFF;
-    padding-bottom: 3px; 
-    font-size: 16px; 
-    margin: 0; 
+  color: #007BFF;
+  padding-bottom: 3px;
+  font-size: 16px;
+  margin: 0;
 }
+
 .contact-us p {
-    margin-bottom: 5px; 
-     font-size: 14px;
-    }
-    
-    
-    
-    
-    
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
